@@ -1,0 +1,22 @@
+{
+  "name": "tinnova_qa",
+  "version": "1.0.0",
+  "description": " desenvolver testes automatizados para a tela de Cadastro de ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "test:chrome": "cypress run --browser chrome --no-exit"
+  },
+  "author": "Alex Nascimento",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^9.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  },
+  "dependencies": {
+    "faker": "^6.6.6"
+  }
+}
